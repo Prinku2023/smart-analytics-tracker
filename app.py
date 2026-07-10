@@ -1,5 +1,8 @@
 import streamlit as st
 import tracker_engine as engine
+import database_setup as setup
+
+setup.init_tracker_db()
 
 # Page configurations
 st.set_page_config(page_title="Project Analytics Tracker", layout="wide")
